@@ -1,7 +1,16 @@
 {
-  "buildCommand": "npm install && npm run build",
-  "devCommand": "npm run dev",
+  "buildCommand": "npm run build",
   "installCommand": "npm install",
   "framework": "vite",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/api/advisor/health",
+      "destination": "/api/advisor/health.js"
+    },
+    {
+      "source": "/api/advisor",
+      "destination": "/api/advisor/index.js"
+    }
+  ]
 }
