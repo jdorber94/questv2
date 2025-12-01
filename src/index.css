@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222.2 84% 4.9%;
+    /* Back to black */
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    /* Deep Evergreen / Teal Green */
+    --primary: 168 85% 28%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Soft Blue */
+    --secondary: 200 60% 92%;
+    --secondary-foreground: 168 85% 28%;
+
+    --muted: 200 30% 96%;
+    --muted-foreground: 200 20% 50%;
+
+    --accent: 200 60% 92%;
+    --accent-foreground: 168 85% 28%;
+
+    --destructive: 168 85% 15%;
+    /* Very dark green instead of red */
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 200 20% 90%;
+    --input: 200 20% 90%;
+    --ring: 168 85% 28%;
+
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 168 50% 10%;
+    /* Very dark green bg */
+    --foreground: 210 40% 98%;
+
+    --card: 168 50% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 168 50% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Lighter Teal for Dark Mode */
+    --primary: 168 70% 50%;
+    --primary-foreground: 168 85% 15%;
+
+    --secondary: 168 30% 20%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 168 30% 20%;
+    --muted-foreground: 200 20% 65%;
+
+    --accent: 168 30% 20%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 168 85% 20%;
+    /* Very dark green for dark mode */
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 168 30% 20%;
+    --input: 168 30% 20%;
+    --ring: 168 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
